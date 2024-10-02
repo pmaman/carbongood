@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+import { Grid2, ThemeProvider } from '@mui/material';
+import theme from './Theme.tsx';
+import Nav from "./Components/Nav";
+import About from './Components/About';
+import Solutions from "./Components/Solutions";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme = {theme}>
+        <Grid2 container>
+          <Grid2 item sm={12}>
+            <Nav />
+          </Grid2>
+          <Grid2 item sm={12}>
+            <Routes>
+              <Route path='/about' element={<About />} />
+              <Route path='/solutions' element={<Solutions />} />
+            </Routes>
+          </Grid2>
+        </Grid2>
+    </ThemeProvider>
   );
 }
 
