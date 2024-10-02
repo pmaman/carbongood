@@ -26,6 +26,23 @@ const theme = createTheme({
           ].join(','),
     },
     components:{
+        MuiCssBaseline: {
+            styleOverrides: {
+                // Override slick-carousel dots styles
+                '.slick-dots li button': {
+                    width: '20px',     // Set custom width for dots
+                    height: '20px',    // Set custom height for dots
+                    borderRadius: '50%', // Keep dots circular
+                },
+                '.slick-dots li button:before': {
+                    fontSize: '20px',  // Adjust the size of the dot
+                    color: '#000',     // Set color for dots
+                },
+                '.slick-dots li.slick-active button:before': {
+                    color: '#ff0000',  // Active dot color
+                },
+            },
+        },
         MuiContainer:{
             styleOverrides:{
                 root:{
@@ -59,7 +76,7 @@ const theme = createTheme({
                     position:'sticky',
                     top:'68.5px',
                     zIndex:1000,
-                    backgroundColor:'#ffffff'
+                    backgroundColor:'#fff'
                 },
                 flexContainer:{
                     justifyContent:'center'
@@ -73,7 +90,7 @@ const theme = createTheme({
                     '&.Mui-selected': {
                     color: '#3B9D95', // Active tab color
                     borderBottom: '4px solid #3B9D95', // Border bottom stroke for active tab
-                    }
+                }
                 }
             }
         },
