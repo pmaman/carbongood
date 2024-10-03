@@ -89,7 +89,7 @@ const theme = createTheme({
                     borderBottom: '4px solid #ffffff', // Border bottom stroke for active tab
                     '&.Mui-selected': {
                     color: '#3B9D95', // Active tab color
-                    borderBottom: '4px solid #3B9D95', // Border bottom stroke for active tab
+                    borderBottom: '4px solid #3B9D95', // Border bottom stroke for active tab]
                 }
                 }
             }

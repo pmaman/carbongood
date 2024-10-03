@@ -11,9 +11,13 @@ function TabPanel({ children, value, index, ...other }) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
+      style={{
+        width: '100%',
+        height: '100%'
+      }}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 3, minWidth: "100%", minHeight: "100%"}}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -32,7 +36,11 @@ const PageTabs = forwardRef((props, ref) => {
   return (
     <Box ref={ref} sx={{ width: '100%' }}>
       {/* Tab bar */}
-      <Tabs value={value} onChange={handleChange} aria-label="page tabs">
+      <Tabs 
+        value={value} 
+        onChange={handleChange} 
+        aria-label="page tabs"
+      >
         <Tab label="What is Carbon Good?" />
         <Tab label="Why Do We Need It?" />
       </Tabs>
