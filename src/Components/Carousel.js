@@ -7,7 +7,6 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Carousel = () => {
-  console.log('CarouselComponent rendered');
 
   const sliderRef = useRef(null); // Ref to access slider methods
 
@@ -23,15 +22,31 @@ const Carousel = () => {
 
   // Ensure sliderRef is attached correctly
   useEffect(() => {
-    if (sliderRef.current) {
+    const logInterval = setInterval(() => {
       console.log("SliderRef is set:", sliderRef.current);
+    }, 1000); // Log every second
+  
+    // Cleanup interval when the component is unmounted or re-rendered
+    return () => clearInterval(logInterval);
+  }, [sliderRef]);
+
+
+  const goToPrevSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev(); // Use sliderRef to go to previous slide
     }
-  }, []);
+  };
+
+  const goToNextSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); // Use sliderRef to go to next slide
+    }
+  };
 
 
   return (
     <Box sx={{ position: 'relative', width: "80%", margin: "0 auto", mt: 5 }}>
-      <Slider {...settings}>
+      <Slider {...settings} ref={sliderRef}> 
           <Box>
               <Typography variant="h4" align="center">Slide 1</Typography>
               <MuiImg
@@ -56,8 +71,8 @@ const Carousel = () => {
         left: "20px",
         transform: "translateY(-50%)",
       }}
-      onClick={() => sliderRef.current?.slickPrev()} // Navigate to the previous slide
-    >
+      onClick={goToPrevSlide} // Use the new function to navigate to the previous slide
+      >
       <ArrowBackIcon />
     </Fab>
 
@@ -71,7 +86,7 @@ const Carousel = () => {
         right: "20px",
         transform: "translateY(-50%)",
       }}
-      onClick={() => sliderRef.current?.slickNext()} // Navigate to the next slide
+        onClick={goToNextSlide} // Use the new function to navigate to the previous slide
     >
       <ArrowForwardIcon />
     </Fab>
