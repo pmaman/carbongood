@@ -34,7 +34,7 @@ const PageTabs = forwardRef((props, ref) => {
   };
 
   return (
-    <Box ref={ref} sx={{ width: '100%' }}>
+    <Box ref={ref} sx={{ width: '100%'}}>
       {/* Tab bar */}
       <Tabs 
         value={value} 

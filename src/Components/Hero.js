@@ -10,6 +10,7 @@ const Hero = () => {
             padding:5,
             position:'relative',
             width:'100%',
+            height:'60vh',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -24,6 +25,7 @@ const Hero = () => {
             backgroundColor="rgba(0,0,0,0.5)"
             padding = "20px"
             borderRadius ="10px"
+            spacing ="30px"
         >
             <Typography 
                 sx={{
