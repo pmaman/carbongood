@@ -6,7 +6,7 @@ export const MuiImg = styled('img')(({ theme }) => ({
     height: 'auto',  // Maintain aspect ratio
     objectFit: 'cover',  // Cover the container area
     alignItems:"center"
-  }));
+}));
 
 const theme = createTheme({
     palette:{
