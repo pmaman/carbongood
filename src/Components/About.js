@@ -3,6 +3,7 @@ import { ArrowDownward } from '@mui/icons-material';
 import Grid2 from '@mui/material/Grid2'
 import { Fab, Typography } from '@mui/material'
 import PageTabs from './PageTabs.js'
+import Hero from './Hero.js';
 
 function ScrollButton({ targetRef }) {
   console.log("ScrollButton rendered"); // Check if it's rendering
@@ -37,39 +38,16 @@ export default function About() {
     <>
       <Grid2 
         container
-        mt={10}
+        mt={8}
         sx={{minWidth: "100%", justifyContent:'center', alignItems:'center'}}
       >
-        <Grid2 item xs={12}>
-          <Typography 
-            sx={{
-                variant:"h1",
-                fontSize:"3rem",
-                padding:'30px'
-            }}>
-            Hydroponic Carbon Capture Anywhere, Simply
-          </Typography>
-          <Typography
-            sx={{
-                    variant:"h2",
-                    fontSize:"2rem",
-            }}
-            >
-              A new CCS for anywhere conventional solutions can and can't go. 
-          </Typography>
-          <Typography
-            sx={{
-              variant:"h3",
-              fontSize:"1.5rem",
-            }}
-          >
-            CarbonGood economically converts CO2 to biomass at massive scale in a fraction of the area normally required.
-          </Typography>
+        <Grid2 item xs={12} sx={{m:'0px', width:'100%'}}>
+          <Hero />
         </Grid2>
-        <Grid2 item xs={12} sx={{m:'50px', width:'100%'}}> 
+        <Grid2 item xs={12} sx={{m:'50px'}}> 
             <iframe
               width="100%" 
-              height="300px"
+              height="auto"
               src="https://www.youtube.com/embed/vkteemwYEvw?si=niZIqchOlHJuw363&amp;controls=0"
               title="CarbonGood MIT SOLVE" 
               frameborder="0"
