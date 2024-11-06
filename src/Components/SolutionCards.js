@@ -1,7 +1,9 @@
 import React from 'react'
 import { Grid2 } from '@mui/material'
-import harvestImg from "../Images/cropped_images/Harvest.png";
 import Card from "./Card.js"
+import harvestImg from "../Images/cropped_images/Harvest.png";
+import processDiagram from '../Images/CarbonGood_Process.png'
+
 
 
 function SolutionCards() {
@@ -27,14 +29,14 @@ function SolutionCards() {
           className="left-card"
           titleText={"Commercial"}
           bodyText={"This is our industrial scale solution. It is for companies to use at the source. When will the line break."}
-          image={harvestImg}
+          image={processDiagram}
           navigateTo="/CommercialUseCase"
         />
       </Grid2>
       <Grid2 
         item
         xs={6}
-        sx={{width: '45%', height:'40vh'}}
+        sx={{width: '45%', height:'auto'}}
         className="right-card-container"
       >
           <Card 
