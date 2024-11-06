@@ -96,7 +96,7 @@ export default function About() {
         <Grid2 item xs={12}>
           <Typography variant="h5" sx={{width:'80vw', my:'40px'}}>
             It will take decades for renewables to substitute most of our fossil-fuelled energy and industrial infrastructure - cement, steel etc. 
-            We don't have that time. CarbonGood is designed to buy us that time by converting fossil emissions directly to biomass.
+            {<strong> We don't have that time.</strong> } CarbonGood is designed to buy us that time by converting fossil emissions directly to biomass.
           </Typography>
         </Grid2>
         <Grid2 item 
