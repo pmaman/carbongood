@@ -26,7 +26,7 @@ const carouselData = [
         ]
     },
     {
-        tabLabel: "Why Do We Need It?",
+        tabLabel: "How Does It Work?",
         slides:[
             {
                 title: <>Improved CO<sub>2</sub> Uptake</>,
@@ -61,7 +61,7 @@ const carouselData = [
         ]
     },
     {
-        tabLabel:"How Does It Work?",
+        tabLabel:"Why Do We Need It?",
         slides:[
             {
                 title:"Environmental Benefits",

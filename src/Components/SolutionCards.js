@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid2, Stack, Paper, Typography } from '@mui/material'
+import { Grid2 } from '@mui/material'
 import harvestImg from "../Images/cropped_images/Harvest.png";
 import Card from "./Card.js"
 

@@ -1,10 +1,15 @@
 import React, { useState, forwardRef } from 'react';
 import { Box, Tabs, Tab, Stack, Typography } from '@mui/material';
+import {MuiImg} from '../Theme.tsx'
 import Carousel from './Carousel';
 import carouselData from '../data/carouselData';
 import TwoColumn from './TwoColumn';
-import hederaHelixImage from '../Images/hedera_helix.png'
-import {MuiImg} from '../Theme.tsx'
+import pestDamangeImage from '../Images/pestDamage.png'
+import ledImage from '../Images/ledLighting.png'
+import runoffImage from '../Images/runoff.png'
+import droughtImage from '../Images/drought.png'
+import landConversion from '../Images/convertLand.png'
+import stackableModules from '../Images/stackableModules.png'
 
 // Utility function to display the right content based on the selected tab
 function TabPanel({ children, value, index, ...other }) {
@@ -64,7 +69,7 @@ const PageTabs = forwardRef((props, ref) => {
                 We've almost nowhere left to grow biomass. 40% of Earth's land surface is already used for food, and it isn't enough - millions have barely enough - or too little - to eat now. Most of the remaining 60% is either lived on, cannot be used like desert, or like forests, needs to be left alone.              
               </Typography>
               <TwoColumn 
-                image={hederaHelixImage} 
+                image={landConversion} 
                 title={"Difficulty Converting Land fom Other Uses"} 
                 body={"Switching anything LIKE enough land from other uses to grow the biomass amounts needed is very, very difficult. As an example, the UK's Drax biomass power plant consumes 20,000 tons of wood pellets a DAY. That's trees the UK doesn't have, so the biomass is imported from USA, Canada, Europe and Brazil. That brings a high carbon penalty just in shipping, plus the carbon footprint of logging, chipping, drying and pelleting the biomass. It's unsurprising that Drax is highly controversial."} 
                 side={"left"}/>
@@ -75,25 +80,25 @@ const PageTabs = forwardRef((props, ref) => {
               <Typography variant="h2">Higher CO2 Levels Increase Biomass Uptake</Typography>
               <Typography variant="body1">CarbonGood can optimize CO2 levels for maximum effect, the process should yield 30-40% improvement in CO2 uptake. That's also 30-40% faster biomass when used with an emitter.</Typography>
               <TwoColumn 
-                image={hederaHelixImage} 
+                image={pestDamangeImage} 
                 title={"Hydroponics Eliminate Weed and Pest Damage"} 
                 body={"hydroponics eliminates weed and pest damage - a key factor in yield loss - by  excluding them. That means no dangerous chemicals - and a further 30-40% output boost."} 
                 side={"left"}
               />
               <TwoColumn 
-                image={hederaHelixImage} 
+                image={ledImage} 
                 title={"LED Lighting Boosts Growing Speed by 50%"}
                 body={"LED lighting boosts growing speed 50%."} 
                 side={"right"}
               />
               <TwoColumn 
-                image={hederaHelixImage} 
+                image={runoffImage} 
                 title={"No Pollution"} 
-                body={"as nutrient is delivered just where it's needed, in just the right amount, there's no mass spraying that wastes 90% of the chemicals - so there's no run-off pollution, which means less toxic algal bloom in our seas and lakes, protecting marine species and securing another food source."} 
+                body={"Nutrients are delivered where they are needed, in the right amounts. There's no mass spraying that wastes 90% of the chemicals so there's no run-off pollution. This means less toxic algal bloom in our seas and lakes, protecting marine species and securing another food source."} 
                 side={"left"}
               />
               <TwoColumn 
-                image={hederaHelixImage} 
+                image={droughtImage} 
                 title={"Immune To Weather and Seasonal Change"} 
                 body={" it's immune to weather which in the West cuts agricultural yield by 20% - we get that back too. it has no seasons and (almost) no night - unike most agriculture, it's virtually 24/7/365. That gives us 30%+ more growing time on average."} 
                 side={"right"}
@@ -101,10 +106,10 @@ const PageTabs = forwardRef((props, ref) => {
               <Typography variant="h2">4x More Product Per Unit Area</Typography>
               <Typography variant="h5">Stackable Modules</Typography>
               <MuiImg
-                src={hederaHelixImage}
+                src={stackableModules}
                 sx={{
-                  width:'100%',
-                  height:'300px',
+                  width:'50%',
+                  height:'auto',
                   objectFit: 'cover'
               }}
               />
