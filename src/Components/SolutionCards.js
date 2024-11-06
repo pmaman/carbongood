@@ -22,7 +22,7 @@ function SolutionCards() {
       <Grid2 
         item
         xs={6}
-        sx={{width: '45%', height:'auto'}}
+        sx={{ width: '45%'}}
         className="left-card-container"
         >
         <Card 
@@ -36,7 +36,7 @@ function SolutionCards() {
       <Grid2 
         item
         xs={6}
-        sx={{width: '45%', height:'auto'}}
+        sx={{ width: '45%'}}
         className="right-card-container"
       >
           <Card 

@@ -135,9 +135,7 @@ function Nav() {
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
                 fontWeight: 700,
-                letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
                 textAlign: 'center'
@@ -162,33 +160,33 @@ function Nav() {
               <Stack direction="row" spacing={2} justifyContent="right" >
                 <Tooltip title="Link to CarbonGood Discord">
                 <IconButton onClick={() => window.open('https://discord.gg/jBQhq5Xz')} sx={{ p: 0 }}>
-                      <Box
-                        sx={{
-                            backgroundImage: `url(${DiscIcon})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            backgroundSize: '100%',
-                            width: '25px',
-                            height: '45px'
-                        }}
-                      >
-                      </Box>
-                    </IconButton>
+                  <Box
+                    sx={{
+                      backgroundImage: `url(${DiscIcon})`,
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: 'center',
+                      backgroundSize: '100%',
+                      width: '25px',
+                      height: '45px'
+                    }}
+                  >
+                  </Box>
+                </IconButton>
                 </Tooltip>
                 <Tooltip title="Link to CarbonGood Github">
                   <IconButton onClick={() => window.open('https://github.com/')} >
-                      <Box
-                        sx={{
-                            backgroundImage: `url(${GitIcon})`,
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            backgroundSize: '100%',
-                            width: '25px',
-                            height: '45px'
-                        }}
-                      >
-                      </Box>
-                    </IconButton>
+                    <Box
+                      sx={{
+                        backgroundImage: `url(${GitIcon})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'center',
+                        backgroundSize: '100%',
+                        width: '25px',
+                        height: '45px'
+                      }}
+                    >
+                    </Box>
+                  </IconButton>
                   </Tooltip>
               </Stack>
             <Menu

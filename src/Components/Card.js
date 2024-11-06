@@ -14,6 +14,7 @@ function Card({titleText, bodyText, image, navigateTo}) {
     <Paper
         onClick={handleClick}
         sx={{
+            minHeight: '300px',
             px:'0px',
             pt:'0px', 
             pb:'30px',
@@ -21,8 +22,6 @@ function Card({titleText, bodyText, image, navigateTo}) {
             justifyContent:'center', 
             overflow:'hidden', 
             // position:'relative',
-            width:'100%',
-            height:'auto',
             '&:hover': {
             backgroundColor: 'lightblue', // Hover background color
         },
@@ -36,8 +35,9 @@ function Card({titleText, bodyText, image, navigateTo}) {
             src={image} 
             sx={{
                 width:'100%',
-                height:'auto', 
+                height:'300px', 
                 objectFit: 'cover',
+                overflow: 'hidden',
             }} 
         />
         <Typography 

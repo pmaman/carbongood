@@ -18,7 +18,7 @@ function SolutionsOverview() {
     >
       <Grid2 
         item 
-        xs={6} 
+        xs={5} 
         sx={{
             display:'flex',
             alignItems:'center',
@@ -27,12 +27,12 @@ function SolutionsOverview() {
     >
         <MuiImg
             src= {processDiagram}
-            sx={{width:'45%', height:'auto'}}
+            sx={{width:'100%'}}
         />
       </Grid2>
       <Grid2 
         item 
-        xs={6} 
+        xs={5} 
         sx={{
             display:'flex',
             alignItems:'center',
@@ -41,7 +41,7 @@ function SolutionsOverview() {
         >
             <MuiImg
                 src= {glossary}
-                sx={{width:'45%', height:'auto'}}
+                sx={{width:'100%'}}
             />
         </Grid2>
     </Grid2>
