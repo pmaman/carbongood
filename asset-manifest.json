@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/pmaman/carbongood/static/css/main.f7f43cec.css",
-    "main.js": "/pmaman/carbongood/static/js/main.1892dc83.js",
-    "static/media/solararray.png": "/pmaman/carbongood/static/media/solararray.bff69ee3ab16e28f7653.png",
-    "static/media/biochar.png": "/pmaman/carbongood/static/media/biochar.c4622f3a00709f00fd49.png",
-    "static/media/Harvest.png": "/pmaman/carbongood/static/media/Harvest.e2d6492cf9542dbaaf95.png",
-    "static/media/Dac.png": "/pmaman/carbongood/static/media/Dac.5f249aca3d63a546fe9d.png",
-    "static/media/hydroponics hero.png": "/pmaman/carbongood/static/media/hydroponics hero.0e5020e98ea845fb25b6.png",
-    "static/media/hedera_helix.png": "/pmaman/carbongood/static/media/hedera_helix.313206dfa2b58bbd8686.png",
-    "static/media/x-logo-black.png": "/pmaman/carbongood/static/media/x-logo-black.c9d69acfaf852c0ddb71.png",
-    "static/media/MIT solve logo.png": "/pmaman/carbongood/static/media/MIT solve logo.18e9b72e7c6d966ebbbb.png",
-    "static/media/logo-climate-colab_1.png": "/pmaman/carbongood/static/media/logo-climate-colab_1.0c1a4b70a2fed71af2dc.png",
-    "static/media/icon_clyde_black_RGB.png": "/pmaman/carbongood/static/media/icon_clyde_black_RGB.f33f7d9fc07e1d074064.png",
-    "static/media/slick.svg": "/pmaman/carbongood/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/pmaman/carbongood/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/pmaman/carbongood/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/pmaman/carbongood/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/pmaman/carbongood/index.html",
-    "main.f7f43cec.css.map": "/pmaman/carbongood/static/css/main.f7f43cec.css.map",
-    "main.1892dc83.js.map": "/pmaman/carbongood/static/js/main.1892dc83.js.map"
+    "main.css": "/carbongood/static/css/main.a5d320b2.css",
+    "main.js": "/carbongood/static/js/main.dd701ca6.js",
+    "static/media/solararray.png": "/carbongood/static/media/solararray.bff69ee3ab16e28f7653.png",
+    "static/media/biochar.png": "/carbongood/static/media/biochar.c4622f3a00709f00fd49.png",
+    "static/media/Harvest.png": "/carbongood/static/media/Harvest.e2d6492cf9542dbaaf95.png",
+    "static/media/Dac.png": "/carbongood/static/media/Dac.5f249aca3d63a546fe9d.png",
+    "static/media/hydroponics hero.png": "/carbongood/static/media/hydroponics hero.0e5020e98ea845fb25b6.png",
+    "static/media/hedera_helix.png": "/carbongood/static/media/hedera_helix.313206dfa2b58bbd8686.png",
+    "static/media/x-logo-black.png": "/carbongood/static/media/x-logo-black.c9d69acfaf852c0ddb71.png",
+    "static/media/MIT solve logo.png": "/carbongood/static/media/MIT solve logo.18e9b72e7c6d966ebbbb.png",
+    "static/media/logo-climate-colab_1.png": "/carbongood/static/media/logo-climate-colab_1.0c1a4b70a2fed71af2dc.png",
+    "static/media/icon_clyde_black_RGB.png": "/carbongood/static/media/icon_clyde_black_RGB.f33f7d9fc07e1d074064.png",
+    "static/media/slick.svg": "/carbongood/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/carbongood/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/carbongood/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/carbongood/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/carbongood/index.html",
+    "main.a5d320b2.css.map": "/carbongood/static/css/main.a5d320b2.css.map",
+    "main.dd701ca6.js.map": "/carbongood/static/js/main.dd701ca6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7f43cec.css",
-    "static/js/main.1892dc83.js"
+    "static/css/main.a5d320b2.css",
+    "static/js/main.dd701ca6.js"
   ]
 }
