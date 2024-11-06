@@ -61,16 +61,13 @@ function Nav() {
           >
           </Box>
           <Typography
-            variant="h6"
+            variant="h3"
             noWrap
             component="a"
             href="/about"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex', lg: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
               textAlign: 'center'

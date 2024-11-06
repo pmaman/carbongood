@@ -22,8 +22,27 @@ const theme = createTheme({
         fontFamily: [
             'Futura Md Bt',
             'Inter',
-            'Arial',
+            'Arial'
           ].join(','),
+        h1:{
+            fontSize: '3rem',
+            fontWeight: '700',
+            textAlign: 'center'
+        },
+        h2:{
+            fontSize: '2rem',
+            fontWeight: '400',
+            textAlign: 'center'
+        },
+        h3: {
+            fontSize: '1.5rem',
+            fontWeight: '600',
+            textAlign: 'center'
+        },
+          body1: {
+            fontSize: '1rem',
+            fontWeight: '500'
+        }
     },
     components:{
         MuiCssBaseline: {
@@ -85,13 +104,15 @@ const theme = createTheme({
         },
         MuiTab:{
             styleOverrides:{
-                root:{
+                root:({ theme }) => ({
+                    ...theme.typography.h5,
+                    textTransform:'none',
                     borderBottom: '4px solid #ffffff', // Border bottom stroke for active tab
                     '&.Mui-selected': {
                     color: '#3B9D95', // Active tab color
                     borderBottom: '4px solid #3B9D95', // Border bottom stroke for active tab]
                 }
-                }
+                }),
             }
         },
         MuiButtonBase:{
@@ -141,6 +162,18 @@ const theme = createTheme({
                 root:{
                     //width:'100%',
                     textAlign:'center'
+                }
+            }
+        },
+        MuiLink: {
+            styleOverrides: {
+                root:{
+                    color: '#1a73e8',
+                    textDecoration: 'none',
+                    '&:hover': {
+                        textDecoration:'underline',
+                    },
+                    fontWeight: 600,
                 }
             }
         }

@@ -1,9 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { ArrowDownward } from '@mui/icons-material';
 import Grid2 from '@mui/material/Grid2'
-import { Fab, Typography } from '@mui/material'
+import { Stack, Fab, Typography } from '@mui/material'
 import PageTabs from './PageTabs.js'
 import Hero from './Hero.js';
+import SolutionCards from './SolutionCards.js';
+import ThreeColumnSection from './ThreeColumnSection.js';
 
 function ScrollButton({ targetRef }) {
   //console.log("ScrollButton rendered"); // Check if it's rendering
@@ -78,35 +80,40 @@ export default function About() {
     <>
       <Grid2 
         container
+        xs={12}
         mt={8}
-        sx={{minWidth: "100%", justifyContent:'center', alignItems:'center'}}
+        spacing={5}
+        sx={{
+          minWidth: "100%", 
+          mb:'50px', 
+          justifyContent:'center', 
+          alignItems:'center'
+        }}
       >
         <Grid2 item xs={12} sx={{m:'0px', width:'100%'}}>
           <Hero />
+        </Grid2>
+        <Grid2 item xs={12}>
+          <Typography variant="h5" sx={{width:'80vw', my:'40px'}}>
+            It will take decades for renewables to substitute most of our fossil-fuelled energy and industrial infrastructure - cement, steel etc. 
+            We don't have that time. CarbonGood is designed to buy us that time by converting fossil emissions directly to biomass.
+          </Typography>
         </Grid2>
         <Grid2 item 
           xs={12} 
           sx={{
             m:'20px', 
-            width:'100%', 
+            width:'80vw', 
+            height: 'auto',
             display:'flex', 
             flexDirection:'column', 
             justifyContent:'center', 
             alignItems:'center'
           }}
-        > 
-          {/* <Typography
-            sx={{
-              fontSize:'1.5rem',
-              mb:'20px'
-              }}
-          >
-            Carbon Good - The Future of Carbon Capture
-          </Typography> */}
+        >
           <iframe
-            width="60%"
-            height="auto"
-            minHeight="400px"
+            height="400px"
+            width="100%"
             src="https://www.youtube.com/embed/vkteemwYEvw?si=niZIqchOlHJuw363&amp;controls=0"
             title="CarbonGood MIT SOLVE" 
             frameborder="0"
@@ -116,14 +123,22 @@ export default function About() {
               borderRadius:"10px",
               border:"2px solid rgba(0,0,0,0.5)",
             }}
-            //allowfullscreen
             > 
           </iframe>
         </Grid2>
         <Grid2 item xs={12}>
-          <ScrollButton targetRef={targetRef} />
+          <ThreeColumnSection />
         </Grid2>
-        <Grid2 item xs={12} > 
+        <Grid2 item xs={12} sx={{backgroundColor:'lightgrey', py:'60px'}}>
+          <Stack direction="column" spacing={3}>
+            <Typography variant="h2">Solutions</Typography>
+            <SolutionCards />
+          </Stack>
+        </Grid2>
+        {/* <Grid2 item xs={12}>
+          <ScrollButton targetRef={targetRef} />
+        </Grid2> */}
+        <Grid2 item xs={12}> 
           <PageTabs ref={targetRef} />
         </Grid2>
       </Grid2>

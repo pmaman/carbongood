@@ -22,36 +22,16 @@ const Hero = () => {
     >
         <Stack
             direction="column"
-            backgroundColor="rgba(0,0,0,0.5)"
             padding = "20px"
-            borderRadius ="10px"
             spacing ="30px"
+            borderRadius ="10px"
+            backgroundColor="rgba(0,0,0,0.5)"
         >
-            <Typography 
-                sx={{
-                    variant:"h1",
-                    fontSize:"3rem",
-                    color:'white'
-                }}>
+            <Typography variant="h1" sx ={{color:'#fff'}}>
                 Hydroponic Carbon Capture Anywhere, Simply
             </Typography>
-            <Typography
-                sx={{
-                    variant:"h2",
-                    fontSize:"2rem",
-                    color:'white'
-                }}
-                >               
-                A new CCS for anywhere conventional solutions can and can't go.
-            </Typography>
-            <Typography
-                sx={{
-                    variant:"h3",
-                    fontSize:"1.5rem",
-                    color:'white'
-                }}
-                >
-                CarbonGood economically converts CO2 to biomass at massive scale in a fraction of the area normally required.
+            <Typography variant="h2" sx={{color:'white'}}>               
+                Converting CO2 to biomass in a fraction of the area normally required
             </Typography>
         </Stack>
     </Box>
