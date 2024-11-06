@@ -94,10 +94,17 @@ export default function About() {
           <Hero />
         </Grid2>
         <Grid2 item xs={12}>
-          <Typography variant="h5" sx={{width:'80vw', my:'40px'}}>
-            It will take decades for renewables to substitute most of our fossil-fuelled energy and industrial infrastructure - cement, steel etc. 
-            {<strong> We don't have that time.</strong> } CarbonGood is designed to buy us that time by converting fossil emissions directly to biomass.
-          </Typography>
+          <Stack direction="column" spacing={2}>
+            <Typography variant="h5">
+              It will take decades for renewables to substitute most of our fossil-fuelled energy and industrial infrastructure. 
+            </Typography>
+            <Typography variant="h5" sx={{fontWeight:'700'}}>
+              We don't have that time.
+            </Typography>
+            <Typography variant="h5" >
+              CarbonGood is designed to buy us that time by converting fossil emissions directly to biomass.
+            </Typography>
+          </Stack>
         </Grid2>
         <Grid2 item 
           xs={12} 

@@ -60,21 +60,23 @@ function Nav() {
             }}
           >
           </Box>
-          <Typography
-            variant="h3"
-            noWrap
-            component="a"
-            href="/about"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex', lg: 'flex' },
-              color: 'inherit',
-              textDecoration: 'none',
-              textAlign: 'center'
-            }}
-          >
-            CarbonGood
-          </Typography>
+          <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Typography
+              variant="h3"
+              noWrap
+              component="a"
+              href="/about"
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex', lg: 'flex' },
+                color: 'inherit',
+                textDecoration: 'none',
+                textAlign: 'center'
+              }}
+            >
+              CarbonGood
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -106,9 +108,7 @@ function Nav() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
-                    <Link style={{textDecoration:'none', color: '#000000'}} to={`/${page}`}>{page}</Link>
-                </Typography>
+                  <Link style={{textDecoration:'none', color: '#000000'}} to={`/${page}`}><Typography variant="h6" sx={{ textTransform: 'none' }}>{page}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -125,25 +125,27 @@ function Nav() {
               }}
           >
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/about"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              textAlign: 'center'
-            }}
-          >
-            CarbonGood
-          </Typography>
+          <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/about"
+              sx={{
+                mr: 2,
+                display: { xs: 'flex', md: 'none' },
+                flexGrow: 1,
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'inherit',
+                textDecoration: 'none',
+                textAlign: 'center'
+              }}
+            >
+              CarbonGood
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }}>
             {pages.map((page) => (
               <Button
@@ -151,7 +153,7 @@ function Nav() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link style={{textDecoration:'none', color: '#000'}} to={`/${page}`}>{page}</Link>
+                <Link style={{textDecoration:'none', color: '#000'}} to={`/${page}`}><Typography variant="h6" sx={{ textTransform: 'none' }}>{page}</Typography></Link>
               </Button>
             ))}
           </Box>

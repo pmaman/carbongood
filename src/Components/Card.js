@@ -1,4 +1,4 @@
-import { Grid2, Paper, Stack, Typography } from '@mui/material';
+import { Paper, Stack, Typography } from '@mui/material';
 import {MuiImg} from "../Theme.tsx"
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
@@ -35,9 +35,9 @@ function Card({titleText, bodyText, image, navigateTo}) {
         <MuiImg 
             src={image} 
             sx={{
-                // width:'100%',
-                // height:'40%', 
-                objectFit: 'cover'
+                width:'100%',
+                height:'auto', 
+                objectFit: 'cover',
             }} 
         />
         <Typography 

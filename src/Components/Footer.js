@@ -25,7 +25,7 @@ function Footer() {
     > 
         < Grid2 item>
             <Typography 
-            variant="body1" 
+            variant="body2" 
             sx={{ 
                 textAlign: 'center', 
                 justifyContent:'center',
