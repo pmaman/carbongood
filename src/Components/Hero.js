@@ -25,8 +25,8 @@ const Hero = () => {
             sx={{
                 width:"80%",
                 height:'auto',
-                px:"80px",
-                py:"80px"
+                px:"50px",
+                py:"30px"
             }}
             spacing ={5}
             borderRadius ="10px"
