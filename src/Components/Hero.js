@@ -22,8 +22,13 @@ const Hero = () => {
     >
         <Stack
             direction="column"
-            padding = "20px"
-            spacing ="30px"
+            sx={{
+                width:"80%",
+                height:'auto',
+                px:"80px",
+                py:"80px"
+            }}
+            spacing ={5}
             borderRadius ="10px"
             backgroundColor="rgba(0,0,0,0.5)"
         >
