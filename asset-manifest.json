@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/carbongood/static/css/main.a5d320b2.css",
-    "main.js": "/carbongood/static/js/main.dd701ca6.js",
+    "main.js": "/carbongood/static/js/main.9ae7fcd4.js",
     "static/media/solararray.png": "/carbongood/static/media/solararray.bff69ee3ab16e28f7653.png",
     "static/media/biochar.png": "/carbongood/static/media/biochar.c4622f3a00709f00fd49.png",
     "static/media/Harvest.png": "/carbongood/static/media/Harvest.e2d6492cf9542dbaaf95.png",
@@ -18,10 +18,10 @@
     "static/media/slick.woff": "/carbongood/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/carbongood/index.html",
     "main.a5d320b2.css.map": "/carbongood/static/css/main.a5d320b2.css.map",
-    "main.dd701ca6.js.map": "/carbongood/static/js/main.dd701ca6.js.map"
+    "main.9ae7fcd4.js.map": "/carbongood/static/js/main.9ae7fcd4.js.map"
   },
   "entrypoints": [
     "static/css/main.a5d320b2.css",
-    "static/js/main.dd701ca6.js"
+    "static/js/main.9ae7fcd4.js"
   ]
 }
