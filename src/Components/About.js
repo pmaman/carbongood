@@ -136,7 +136,7 @@ export default function About() {
         <Grid2 item xs={12}>
           <ThreeColumnSection />
         </Grid2>
-        <Grid2 item xs={12} sx={{backgroundColor:'#F2F2F2', py:'60px'}}>
+        <Grid2 item xs={12} sx={{ m:'20px', px:'20px', py:'40px', borderRadius:'20px', backgroundColor:'#F2F2F2'}}>
           <Stack direction="column" spacing={3}>
             <Typography variant="h2">Solutions</Typography>
             <SolutionCards />

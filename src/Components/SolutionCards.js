@@ -14,7 +14,7 @@ function SolutionCards() {
       spacing={5}
       className="solutions-container" 
       sx={{
-        mt:'10vh',
+        // mt:'10vh',
         alignContent:'center', 
         justifyContent:'center'
       }}
