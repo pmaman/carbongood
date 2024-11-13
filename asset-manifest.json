@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/carbongood/static/css/main.a5d320b2.css",
-    "main.js": "/carbongood/static/js/main.8b6225f5.js",
-    "static/media/CarbonGood_Process.png": "/carbongood/static/media/CarbonGood_Process.03dae11b50f5e85fd260.png",
+    "main.js": "/carbongood/static/js/main.387c3ca7.js",
+    "static/media/CarbonGood_Process.png": "/carbongood/static/media/CarbonGood_Process.ef6f6787e2fb2ccd3480.png",
+    "static/media/KeyFeatures.png": "/carbongood/static/media/KeyFeatures.95c5e05bcfb889a46f56.png",
     "static/media/solararray.png": "/carbongood/static/media/solararray.bff69ee3ab16e28f7653.png",
     "static/media/biochar.png": "/carbongood/static/media/biochar.c4622f3a00709f00fd49.png",
     "static/media/pestDamage.png": "/carbongood/static/media/pestDamage.57adc455e63579f41a00.png",
@@ -15,7 +16,9 @@
     "static/media/hydroponics hero.png": "/carbongood/static/media/hydroponics hero.0e5020e98ea845fb25b6.png",
     "static/media/stackableModules.png": "/carbongood/static/media/stackableModules.1e52607eaa0d5583fe90.png",
     "static/media/hedera_helix.png": "/carbongood/static/media/hedera_helix.313206dfa2b58bbd8686.png",
-    "static/media/CarbonGood_Glossary.png": "/carbongood/static/media/CarbonGood_Glossary.378df05cb4dc93d4dedf.png",
+    "static/media/performanceMetrics.png": "/carbongood/static/media/performanceMetrics.b82e1426803e06a0bd20.png",
+    "static/media/CG_Components1.png": "/carbongood/static/media/CG_Components1.c63fb8b00bdff8cebba7.png",
+    "static/media/CG_Components2.png": "/carbongood/static/media/CG_Components2.af27ec17e275ee641690.png",
     "static/media/x-logo-black.png": "/carbongood/static/media/x-logo-black.c9d69acfaf852c0ddb71.png",
     "static/media/MIT solve logo.png": "/carbongood/static/media/MIT solve logo.18e9b72e7c6d966ebbbb.png",
     "static/media/logo-climate-colab_1.png": "/carbongood/static/media/logo-climate-colab_1.0c1a4b70a2fed71af2dc.png",
@@ -26,10 +29,10 @@
     "static/media/slick.woff": "/carbongood/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/carbongood/index.html",
     "main.a5d320b2.css.map": "/carbongood/static/css/main.a5d320b2.css.map",
-    "main.8b6225f5.js.map": "/carbongood/static/js/main.8b6225f5.js.map"
+    "main.387c3ca7.js.map": "/carbongood/static/js/main.387c3ca7.js.map"
   },
   "entrypoints": [
     "static/css/main.a5d320b2.css",
-    "static/js/main.8b6225f5.js"
+    "static/js/main.387c3ca7.js"
   ]
 }
