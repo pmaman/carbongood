@@ -28,9 +28,9 @@ function SolutionCards() {
         <Card 
           className="left-card"
           titleText={"Commercial"}
-          bodyText={"This is our industrial scale solution. It is for companies to use at the source. When will the line break."}
+          bodyText={"This is our industrial scale solution. It is for companies to use at the source."}
           image={processDiagram}
-          navigateTo="/CommercialUseCase"
+          //navigateTo="/CommercialUseCase"
         />
       </Grid2>
       <Grid2 
@@ -42,9 +42,9 @@ function SolutionCards() {
           <Card 
             className="right-card"
             titleText={"Open Source"}
-            bodyText={"This is our open source solution. It is for people to use anywhere, everywhere you name it. When will the line break."}
+            bodyText={"This is our open source solution. It is for people to use anywhere."}
             image={harvestImg}
-            navigateTo="/OpenSourceUseCase"
+            //navigateTo="/OpenSourceUseCase"
           />
       </Grid2>
     </Grid2>

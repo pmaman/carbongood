@@ -103,7 +103,11 @@ const PageTabs = forwardRef((props, ref) => {
                 body={" it's immune to weather which in the West cuts agricultural yield by 20% - we get that back too. it has no seasons and (almost) no night - unike most agriculture, it's virtually 24/7/365. That gives us 30%+ more growing time on average."} 
                 side={"right"}
               />
-              <Typography variant="h2">4x More Product Per Unit Area</Typography>
+              <Stack direction="column">
+                <Typography variant="overline">CarbonGood Version</Typography>
+                <Typography variant="h2">64x More Product Per Unit Area</Typography>
+
+              </Stack>
               <Typography variant="h5">Stackable Modules</Typography>
               <MuiImg
                 src={stackableModules}

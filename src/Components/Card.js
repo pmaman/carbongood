@@ -22,10 +22,10 @@ function Card({titleText, bodyText, image, navigateTo}) {
             justifyContent:'center', 
             overflow:'hidden', 
             // position:'relative',
-            '&:hover': {
-            backgroundColor: 'lightblue', // Hover background color
-        },
-        transition: 'background-color 0.3s ease', // Smooth transition
+            //'&:hover': {
+            //backgroundColor: 'lightblue', // Hover background color
+        //},
+        //transition: 'background-color 0.3s ease', // Smooth transition
         }}
     >
         <Stack

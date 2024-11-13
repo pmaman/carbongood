@@ -1,8 +1,8 @@
 import React from 'react'
 import {MuiImg} from '../Theme.tsx'
-import { Grid2 } from '@mui/material';
-import processDiagram from '../Images/CarbonGood_Process.png'
-import glossary from '../Images/CarbonGood_Glossary.png'
+import { Grid2, Stack } from '@mui/material';
+import keyFeatures from '../Images/KeyFeatures.png'
+import performanceMetrics from '../Images/performanceMetrics.png'
 
 function SolutionsOverview() {
   return (
@@ -24,26 +24,19 @@ function SolutionsOverview() {
             alignItems:'center',
             justifyContent:'center',
         }}
-    >
-        <MuiImg
-            src= {processDiagram}
-            sx={{width:'100%'}}
-        />
+      >
+        <Stack direction='column'>
+          <MuiImg
+              src= {keyFeatures}
+              sx={{width:'100%'}}
+          />
+          <MuiImg
+              src= {performanceMetrics}
+              sx={{width:'100%'}}
+          />
+
+        </Stack>
       </Grid2>
-      <Grid2 
-        item 
-        xs={5} 
-        sx={{
-            display:'flex',
-            alignItems:'center',
-            justifyContent:'center',
-        }}
-        >
-            <MuiImg
-                src= {glossary}
-                sx={{width:'100%'}}
-            />
-        </Grid2>
     </Grid2>
   )
 }

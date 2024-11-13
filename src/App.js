@@ -6,6 +6,8 @@ import About from './Components/About';
 import SolutionsOverview from "./Components/SolutionsOverview.js";
 import CommercialUseCase from "./Components/CommercialUseCase.js";
 import OpenSourceUseCase from "./Components/OpenSourceUseCase.js";
+import CgComponents from "./Components/CgComponents.js";
+import CgProcess from "./Components/CgProcess.js";
 import Footer from "./Components/Footer";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -29,6 +31,8 @@ function App() {
               <Route path="/" element={<Navigate to="/about" replace />} />
               <Route path='/about' element={<About />} />
               <Route path='/solutions' element={<SolutionsOverview />} />
+              <Route path='/process/' element={<CgProcess />} />
+              <Route path='/components' element={<CgComponents />} />
               <Route path="/CommercialUseCase" element={<CommercialUseCase />} />
               <Route path="/OpenSourceUseCase" element={<OpenSourceUseCase />} />
             </Routes>

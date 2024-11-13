@@ -17,7 +17,7 @@ import GitIcon from '../Logo/github-mark.png';
 import DiscIcon from '../Logo/icon_clyde_black_RGB.png';
 
 
-const pages = ['about', 'solutions'];
+const pages = ['about', 'process', 'components', 'solutions'];
 const settings = ['sett1', 'sett2'];
 
 function Nav() {
